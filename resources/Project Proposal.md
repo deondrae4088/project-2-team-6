@@ -1,4 +1,4 @@
-# Project2Team6 - Title
+# Project2Team6 - Predict housing market trend from historical data
 
 ## Overview
 The goal of our project is ?
