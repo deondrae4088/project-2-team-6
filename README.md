@@ -50,6 +50,17 @@
   * Our team employed a comprehensive data pre-processing approach to ensure the accuracy and reliability of our housing price predictions. We utilized powerful libraries such as NumPy and Pandas for efficient data manipulation and analysis. Matplotlib was used for visualizing data trends and patterns. We also applied data melting techniques to reshape our datasets, making them more suitable for analysis. Additionally, we incorporated time series analysis to account for temporal trends and seasonality in housing prices. This robust pre-processing framework enabled us to prepare our data effectively for machine learning modeling.
 
   * Our team conducted an extensive exploratory data analysis (EDA) to uncover underlying patterns and relationships within the housing data. This initial step allowed us to gain valuable insights and informed our subsequent modeling approach. We employed both ARIMA (AutoRegressive Integrated Moving Average) and Auto-ARIMA models to predict housing prices. The ARIMA model helped us understand the temporal dependencies and trends in the data, while the Auto-ARIMA model automated the process of identifying the optimal parameters for our time series forecasting. By comparing the results from these models, we were able to enhance the accuracy and robustness of our housing price predictions.
+ 
+ * Feature Engineering Analysis
+  * To prepare the dataset for analysis, we first removed outliers by filtering extreme values in the features AveRooms, AveBedrms, Population, and AveOccup. Next, we performed feature selection, choosing key variables such as MedInc, HouseAge, and Population. The data was then split into training and testing sets, with 80% allocated for training and 20% for testing using the train_test_split() function. Finally, we standardized the values using StandardScaler() to ensure consistent scaling across features. 
+
+  * We employed both Linear Regression and Random Forest models for our analysis. The models were trained using the model.fit(X_train, y_train) method, which allowed them to learn from the training data. Once trained, we made predictions on the test data using the model.predict(X_test) function. This approach enabled us to evaluate the performance and accuracy of each model.
+  
+  * To predict housing market trends and analyze influential home features, we utilized the Ames dataset, assuming Californians have similar preferences. We began by preprocessing the dataset, removing features with sparse data and encoding non-numerical features. A correlation analysis was then conducted to identify the 12-15 most influential home features based on their correlation with home prices. 
+  
+  * To delve deeper into feature contributions, we trained models using Linear Regression and Random Forest, employing recursive feature elimination to iteratively remove less important features. Model performance was evaluated using RMSE, R², and MAE metrics, providing a comprehensive understanding of the factors influencing home prices.
+  
+
 
 ## Visuals and Explanations
 * To effectively depict our data, we utilized a variety of visualizations, including line graphs, bar charts, scatter plots, and heatmaps. Line graphs were employed to illustrate trends over time, while bar charts provided a clear comparison of categorical data. Scatter plots helped us identify correlations between different variables, and heatmaps offered a comprehensive view of data density and relationships. We finalized our data display by presenting these visualizations in Google Slides for easy sharing and collaboration, and in Streamlit for an interactive and dynamic user experience. These visual tools enabled us to communicate our findings clearly and effectively to our audience.
@@ -62,7 +73,9 @@ The description.
 ## Additional Explanations and Major Findings
 
 **Major findings**
-* ??
+* Housing Price Prediction using Zillow Data Analysis
+  * As part of our effort to enhance the predictive capabilities of our time series model, we explored the use of Seasonal Autoregressive Integrated Moving Average (SARIMA) to account for seasonality in our dataset. This research involved evaluating the limitations of our existing ARIMA model, which assumes stationarity without explicit seasonal adjustments. By implementing SARIMA, we aimed to better capture recurring patterns in the data, leveraging seasonal differencing and additional parameters to refine our forecasts. We experimented with automated parameter tuning using auto_arima and conducted multiple iterations to optimize the seasonal components (P, D, Q, m). However, this required extensive computational time and deeper fine-tuning, making it challenging to integrate effectively within our project’s timeline.
+  * Given these constraints, we made the strategic decision to revert to ARIMA, ensuring timely completion while maintaining a robust forecasting approach. Despite stepping back from SARIMA, the research process provided valuable insights into time series modeling, specifically the trade-offs between model complexity and practicality in real-world applications. The exploration of SARIMA deepened our understanding of seasonal trends and the challenges of working with large datasets, equipping us with knowledge for potential future refinements. While ARIMA will be our final model, the SARIMA research effort has strengthened our ability to make data-driven decisions and assess the best methodologies based on project requirements and constraints.
 * ??
   
 
