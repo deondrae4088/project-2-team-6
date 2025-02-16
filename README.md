@@ -5,15 +5,15 @@
 ## Table of Contents
 * [Project Overview](#overview)
 * [Business Scenario](#business-scenario)
-* [Data PreProcessing](#data-prep)
+* [Data PreProcessing](#data-preprocessing)
 * [Model Training and Testing](#model-training-and-testing)
-* [Visuals and Explanations](#visuals-explanations)
-* [Demos and Slideshow](#demos)
-* [Additional Explanations and Major Findings](#add-exp-major-findings)
-* [Recommendations and Conclusion](#Recommendations-and-Conclusion)
-* [Project Contributors](#contributors) 
+* [Visuals and Explanations](#visuals-and-explanations)
+* [Demos and Slideshow](#demos-and-slideshow)
+* [Additional Explanations and Major Findings](#additional-explanations-and-major-findings)
+* [Recommendations and Conclusion](#recommendations-and-conclusion)
+* [Project Contributors](#project-contributors) 
 * [Project Structure](#project-structure)
-* [Repository Links](#rep-links)
+* [Repository Links](#repository-links)
 
 ## Project Overview
 The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), feature analysis and interest rate predictability. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
