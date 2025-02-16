@@ -62,19 +62,21 @@ Top 10 California areas with the highest ROI.
 ![image](resources/content/cd_mtop.png)
 The top metro area in California with predicted value.
 
-**Housing Feature Analysis chart 1**
+**Feature Accuracy Analysis**
 ![image](resources/content/rb_heat.PNG)
 Feature analysis 1.
-
-**Housing Feature Analysis chart 2**
 ![image](resources/content/rb_linearreg.PNG)
 Feature analysis 2.
+
+**AMES Feature Analysis**
+![image](resources/content/wat_ames_featimp.PNG)
+AMES Feature Importance
+![image](resources/content/wat_ames_feat.PNG)
+AMES Feature Correlation
 
 **Interest Rate Prediction Analysis chart 1**
 ![image](resources/content/dex_lr1.png)
 linear Regression 1.
-
-**Interest Rate Prediction Analysis chart 2**
 ![image](resources/content/dex_lr2.png)
 linear Regression 2.
 [🔼 Back to top](#idtop)
@@ -83,8 +85,10 @@ linear Regression 2.
 ## Demos and Slideshow
 * Housing Price Prediction using Zillow Data Analysis 
   * Navigate to [Demo](resources/content/cg_demo.gif)    
-* Housing Feature Analysis
+* Feature Accuracy Analysis
   * Navigate to [Demo](resources/content/rb_demo.gif)
+* AMES Feature Analysis
+  * Navigate to [Demo](resources/content/wat_demo.gif)
 * Interest Rate Prediction Analysis
   * Navigate to [Demo](resources/content/dex_demo.gif)  
 * Project #2 - Team #6 - Slideshow 
