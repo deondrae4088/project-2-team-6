@@ -1,7 +1,29 @@
-# Golden State Housing Report: A predictive analysis of California's housing market
+# **Golden State Housing Report: A predictive analysis of California's housing market**
+
+<img src="../resources/content/gs1.jpg" width="750">
+
+Project Contributors: **Chris Gilbert, Dexter Johnson, Jacinto Quiroz, Joel Freeman, Sean Burroughs and Will Atwater**
+
+## Table of Contents
+* [Project Overview](#overview)
+* [Business Understanding](#business-understanding)
+* [Data Pre-Processing](#data-understanding-and-preparation)
+* [Model Training and Testing](#model-training-and-testing)
+* [Recommendations and Conclusion](#Recommendations-and-Conclusion)
+* [Contributors](#contributors)
+* [Project Structure](#project-structure)
+
+
+## Repository Links
+* [Data](/data)
+* [Python scripts](/tools)
+* [Images](/images)
 
 ## **Project Overview**
-* The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), affordability, distance between homes and cities, and specific home features. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
+The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), feature analysis and interest rate predictability. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
+
+## **Business Scenario**
+We framed our business problem by taking the role of an independent real estate consultant. Our client is looking to purchase a home in California after recently accepting a job offer in the area. Therefore, they have approached us to identify metro areas that have the highest return on investment. Our task is to identify the best 5 metro areas which we believe will have the highest ROI based on a home feature analysis  as well as predict interest rates in the near term. These predictions will be made using Time Series modeling and linear regression. 
 
 ## Data Pre-Processing & Machine Learning
 * Housing Price Prediction using Zillow Data Analysis
