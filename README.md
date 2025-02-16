@@ -17,11 +17,13 @@
 
 ## Project Overview 
 The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), feature analysis and interest rate predictability. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Business Scenario
 We framed our business problem by taking the role of an independent real estate consultant. Our client is looking to purchase a home in California after recently accepting a job offer in the area. Therefore, they have approached us to identify metro areas that have the highest return on investment. Our task is to identify the best 5 metro areas which we believe will have the highest ROI based on a home feature analysis  as well as predict interest rates in the near term. These predictions will be made using Time Series modeling and linear regression. 
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Data PreProcessing
 * Housing Price Prediction using Zillow Data Analysis
@@ -31,7 +33,8 @@ We framed our business problem by taking the role of an independent real estate 
   * To predict housing market trends and analyze influential home features, we utilized the Ames dataset, assuming Californians have similar preferences. We began by preprocessing the dataset, removing features with sparse data and encoding non-numerical features. A correlation analysis was then conducted to identify the 12-15 most influential home features based on their correlation with home prices. 
 * Interest Rate Prediction Analysis
   * To predict future interest rates up to February 2025, the code utilizes historical data from a CSV file ('fed-rates.csv'). The data spans from January 2017 to December 2024, and is cleaned to calculate average monthly rates. The machine learning techniques employed involve using the trained models to predict interest rates for the months leading up to February 2025. 
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Model Training and Testing  
 * Housing Price Prediction using Zillow Data Analysis
@@ -41,7 +44,8 @@ We framed our business problem by taking the role of an independent real estate 
   * We trained models using Linear Regression and Random Forest, employing recursive feature elimination to iteratively remove less important features. Model performance was evaluated using RMSE, R², and MAE metrics, providing a comprehensive understanding of the factors influencing home prices.
 * Interest Rate Prediction Analysis
   * The visualization includes three key elements: the actual historical interest rates, represented as a line with circle markers; the Linear Regression predictions, depicted as a dashed line with 'x' markers, which illustrate the general trend but may miss some finer details; and the K-Nearest Neighbors (KNN) predictions, shown as a dotted line with square markers, which are potentially more responsive to recent changes in interest rates.
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Visuals and Explanations
 * We used various visualizations to depict our data, including line graphs for trends, bar charts for categorical comparisons, scatter plots for correlations, and heatmaps for data density and relationships. These visualizations were presented in Google Slides for easy sharing and in Streamlit for an interactive experience, effectively communicating our findings.
@@ -73,7 +77,8 @@ linear Regression 1.
 **Interest Rate Prediction Analysis chart 2**
 ![image](resources/content/dex_lr2.png)
 linear Regression 2.
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Demos and Slideshow
 * Housing Price Prediction using Zillow Data Analysis 
@@ -84,17 +89,20 @@ linear Regression 2.
   * Navigate to [Demo](resources/content/dex_demo.gif)  
 * Project #2 - Team #6 - Slideshow 
   * Navigate to [Slideshow PDF](Resources/content/proj1slideshow.pdf)
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Additional Explanations and Major Findings
   * Major findings
     * Housing Price Prediction using Zillow Data Analysis
     * Housing Feature Analysis  
     * Interest Rate Prediction Analysis
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Recommendations and Conclusion
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Project Contributors
 - Chris Gilbert <br>
@@ -109,15 +117,16 @@ linear Regression 2.
     Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
 - Will Atwater <br>
     Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Project Structure
 ```
 ├─ code
-├─── cg_eda_arima.ipynb
-├─── dex_pred_analysis.ipynb
-├─── rb_pred_features.ipynb
-├─── will_pred_features.ipynb
+├── cg_eda_arima.ipynb
+├── dex_pred_analysis.ipynb
+├── rb_pred_features.ipynb
+├── will_pred_features.ipynb
 ├─ resources
 ├── data
 ├─── fed-rates.csv
@@ -138,7 +147,8 @@ linear Regression 2.
 ├─── rb_linearreg.png
 ├─ README.md
 ```
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## Repository Links
 * Code: Code - Directory containing all of the the code
@@ -153,6 +163,7 @@ linear Regression 2.
   * Navigate to [resources/content](resources/content) - Directory containing all images of plots created in Jupyter Notebook and demos.
 * Data: 
   * Navigate to [resources/data](resources/data) - Directory containing all of the csv files used by the code
-[🔼 Back to top](#idtop)<hr>
+[🔼 Back to top](#idtop)
+<hr>
 
 ## References
