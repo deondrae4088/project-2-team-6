@@ -15,11 +15,15 @@
 * [Project Structure](#project-structure)
 * [Repository Links](#repository-links)
 
-## Project Overview
+## Project Overview 
 The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), feature analysis and interest rate predictability. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
+<br><hr>
+[🔼 Back to top](#overview)
 
 ## Business Scenario
 We framed our business problem by taking the role of an independent real estate consultant. Our client is looking to purchase a home in California after recently accepting a job offer in the area. Therefore, they have approached us to identify metro areas that have the highest return on investment. Our task is to identify the best 5 metro areas which we believe will have the highest ROI based on a home feature analysis  as well as predict interest rates in the near term. These predictions will be made using Time Series modeling and linear regression. 
+<br><hr>
+[🔼 Back to top](#overview)
 
 ## Data PreProcessing
 * Housing Price Prediction using Zillow Data Analysis
@@ -29,6 +33,8 @@ We framed our business problem by taking the role of an independent real estate 
   * To predict housing market trends and analyze influential home features, we utilized the Ames dataset, assuming Californians have similar preferences. We began by preprocessing the dataset, removing features with sparse data and encoding non-numerical features. A correlation analysis was then conducted to identify the 12-15 most influential home features based on their correlation with home prices. 
 * Interest Rate Prediction Analysis
   * To predict future interest rates up to February 2025, the code utilizes historical data from a CSV file ('fed-rates.csv'). The data spans from January 2017 to December 2024, and is cleaned to calculate average monthly rates. The machine learning techniques employed involve using the trained models to predict interest rates for the months leading up to February 2025. 
+<br><hr>
+[🔼 Back to top](#overview)
 
 ## Model Training and Testing  
 * Housing Price Prediction using Zillow Data Analysis
