@@ -8,11 +8,12 @@
 * [Data Pre-Processing](#data-prep)
 * [Model Training and Testing](#model-training-and-testing)
 * [Visuals and Explanations](#visuals-explanations)
-* [Demos & Slideshow](#demos)
-* [Project Contributors](#contributors)
-* [Recommendations and Conclusion](#Recommendations-and-Conclusion)* 
+* [Demos and Slideshow](#demos)
+* [Additional Explanations and Major Findings](#add-exp-major-findings)
+* [Recommendations and Conclusion](#Recommendations-and-Conclusion)
+* [Project Contributors](#contributors) 
 * [Project Structure](#project-structure)
-* [Repository Links](#project-structure)
+* [Repository Links](#rep-links)
 
 ## Project Overview
 The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), feature analysis and interest rate predictability. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
@@ -54,11 +55,11 @@ The home value predictions for California top metro areas.
 The home value predictions for California top metro.
 
 **Housing Feature Analysis chart 1**
-![image](resources/content/rb_heat.png)
+![image](resources/content/rb_heat.PNG)
 Feature analysis 1.
 
 **Housing Feature Analysis chart 2**
-![image](resources/content/rb_linearreg.png)
+![image](resources/content/rb_linearreg.PNG)
 Feature analysis 2.
 
 **Interest Rate Prediction Analysis chart 1**
@@ -69,7 +70,7 @@ linear Regression 1.
 ![image](resources/content/dex_lr2.png)
 linear Regression 2.
 
-## Demos and slideshow
+## Demos and Slideshow
 * Housing Price Prediction using Zillow Data Analysis 
   * Navigate to [Demo](resources/content/cg_demo.gif)    
 * Housing Feature Analysis
@@ -85,9 +86,22 @@ linear Regression 2.
     * Housing Feature Analysis  
     * Interest Rate Prediction Analysis
 
-## Project Contributors: **Chris Gilbert, Dexter Johnson, Jacinto Quiroz, Joel Freeman, Sean Burroughs and Will Atwater**
-
 ## Recommendations and Conclusion
+
+## Project Contributors
+- Chris Gilbert <br>
+    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
+- Dexter Johnson <br>
+    Github: [www.github.com/deondrae4088](https://github.com/deondrae4088)<br>
+- Jacinto Quiroz <br>
+    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
+- Joel Freeman <br>
+    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
+- Sean Burroughs <br>
+    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
+- Will Atwater <br>
+    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
+
 
 ## Project Structure
 ```
@@ -116,19 +130,6 @@ linear Regression 2.
 ├─── rb_linearreg.png
 ├─ README.md
 ```
-## Project Contributors
-- Chris Gilbert <br>
-    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
-- Dexter Johnson <br>
-    Github: [www.github.com/deondrae4088](https://github.com/deondrae4088)<br>
-- Jacinto Quiroz <br>
-    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
-- Joel Freeman <br>
-    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
-- Sean Burroughs <br>
-    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
-- Will Atwater <br>
-    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
 
 ## Repository Links
 * Code: Code - Directory containing all of the the code
