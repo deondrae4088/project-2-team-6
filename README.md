@@ -1,6 +1,6 @@
 # **Golden State Housing Report: A predictive analysis of California's housing market**
 
-<img src="../resources/content/gs1.jpg" width="750">
+<img src="./resources/content/gs1.jpg" width="750">
 
 Project Contributors: **Chris Gilbert, Dexter Johnson, Jacinto Quiroz, Joel Freeman, Sean Burroughs and Will Atwater**
 
