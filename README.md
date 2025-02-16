@@ -5,7 +5,7 @@
 ## Table of Contents
 * [Project Overview](#overview)
 * [Business Scenario](#business-scenario)
-* [Data Pre-Processing](#data-prep)
+* [Data PreProcessing](#data-prep)
 * [Model Training and Testing](#model-training-and-testing)
 * [Visuals and Explanations](#visuals-explanations)
 * [Demos and Slideshow](#demos)
@@ -21,7 +21,7 @@ The primary goal of our project, Golden State Housing Insights, is to predict ho
 ## Business Scenario
 We framed our business problem by taking the role of an independent real estate consultant. Our client is looking to purchase a home in California after recently accepting a job offer in the area. Therefore, they have approached us to identify metro areas that have the highest return on investment. Our task is to identify the best 5 metro areas which we believe will have the highest ROI based on a home feature analysis  as well as predict interest rates in the near term. These predictions will be made using Time Series modeling and linear regression. 
 
-## Data Pre-Processing
+## Data PreProcessing
 * Housing Price Prediction using Zillow Data Analysis
   * Our team employed a comprehensive data pre-processing approach to ensure the accuracy and reliability of our housing price predictions. We utilized powerful libraries such as NumPy and Pandas for efficient data manipulation and analysis. Matplotlib was used for visualizing data trends and patterns. We also applied data melting techniques to reshape our datasets, making them more suitable for analysis. Additionally, we incorporated time series analysis to account for temporal trends and seasonality in housing prices. This robust pre-processing framework enabled us to prepare our data effectively for machine learning modeling. Our team conducted an extensive exploratory data analysis (EDA) to uncover underlying patterns and relationships within the housing data. This initial step allowed us to gain valuable insights and informed our subsequent modeling approach. 
 * Housing Feature Analysis
