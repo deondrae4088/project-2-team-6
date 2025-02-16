@@ -14,6 +14,7 @@
 * [Project Contributors](#project-contributors) 
 * [Project Structure](#project-structure)
 * [Repository Links](#repository-links)
+* [References](#references)
 
 ## Project Overview 
 The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), feature analysis and interest rate predictability. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
@@ -21,7 +22,7 @@ The primary goal of our project, Golden State Housing Insights, is to predict ho
 <hr>
 
 ## Business Scenario
-We framed our business problem by taking the role of an independent real estate consultant. Our client is looking to purchase a home in California after recently accepting a job offer in the area. Therefore, they have approached us to identify metro areas that have the highest return on investment. Our task is to identify the best 5 metro areas which we believe will have the highest ROI based on a home feature analysis  as well as predict interest rates in the near term. These predictions will be made using Time Series modeling and linear regression. 
+We approached our business problem as independent real estate consultants. Our client, who recently accepted a job offer in California, seeks to purchase a home in the area. They have tasked us with identifying the top 5 metro areas with the highest return on investment (ROI) based on a home feature analysis. Additionally, we will predict near-term interest rates using Time Series modeling and linear regression to support their decision-making. 
 [🔼 Back to top](#idtop)
 <hr>
 
@@ -130,14 +131,12 @@ linear Regression 2.
 ├── cg_eda_arima.ipynb
 ├── dex_pred_analysis.ipynb
 ├── rb_pred_features.ipynb
-├── will_pred_features.ipynb
+├── watwater_final.ipynb
 ├─ resources
 ├── data
 ├─── fed-rates.csv
 ├─── metro_zillow.csv
-├─── Zillow_historical_pricing.csv
-├─── rb_dataset.csv
-├─── will_dataset.csv
+├─── AmesHousing.csv
 ├── content
 ├─── cd_mtop.png
 ├─── cg_demo.gif
@@ -147,8 +146,12 @@ linear Regression 2.
 ├─── dex_lr1.png
 ├─── dex_lr2.png
 ├─── gs1.jpg
+├─── rb_demo.gif
 ├─── rb_heat.png
 ├─── rb_linearreg.png
+├─── wat_ames_feat.png
+├─── wat_ames_featimp.png
+├─── wat_demo.gif
 ├─ README.md
 ```
 [🔼 Back to top](#idtop)
@@ -171,3 +174,8 @@ linear Regression 2.
 <hr>
 
 ## References
+* https://www.zillow.com/research/data/
+* https://www.kaggle.com/datasets/shashanknecrothapa/ames-housing-dataset
+* https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html
+[🔼 Back to top](#idtop)
+<hr>
