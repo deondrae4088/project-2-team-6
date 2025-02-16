@@ -69,9 +69,9 @@ Feature analysis 1.
 Feature analysis 2.
 
 **AMES Feature Analysis**
-![image](resources/content/wat_ames_featimp.PNG)
+![image](resources/content/wat_ames_featimp.png)
 AMES Feature Importance
-![image](resources/content/wat_ames_feat.PNG)
+![image](resources/content/wat_ames_feat.png)
 AMES Feature Correlation
 
 **Interest Rate Prediction Analysis chart 1**
