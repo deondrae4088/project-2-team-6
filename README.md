@@ -55,12 +55,12 @@ We framed our business problem by taking the role of an independent real estate 
 The ROI for California top metro areas.
 
 **Housing Price Prediction**
-![image](resources/content/cg_predictions.png)
-The home value predictions for California top metro areas.
+![image](resources/content/cg_10.png)
+Top 10 California areas with the highest ROI.
 
 **Housing Price Prediction Top Metro**
 ![image](resources/content/cd_mtop.png)
-The home value predictions for California top metro.
+The top metro area in California with predicted value.
 
 **Housing Feature Analysis chart 1**
 ![image](resources/content/rb_heat.PNG)
@@ -84,7 +84,7 @@ linear Regression 2.
 * Housing Price Prediction using Zillow Data Analysis 
   * Navigate to [Demo](resources/content/cg_demo.gif)    
 * Housing Feature Analysis
-  * Navigate to [Demo](resources/content/mn_demo.gif)
+  * Navigate to [Demo](resources/content/rb_demo.gif)
 * Interest Rate Prediction Analysis
   * Navigate to [Demo](resources/content/dex_demo.gif)  
 * Project #2 - Team #6 - Slideshow 
