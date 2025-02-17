@@ -9,7 +9,7 @@
 * [Model Training and Testing](#model-training-and-testing)
 * [Visuals and Explanations](#visuals-and-explanations)
 * [Demos and Slideshow](#demos-and-slideshow)
-* [Additional Explanations and Major Findings](#additional-explanations-and-major-findings)
+* [Final Summary](#final-summary)
 * [Recommendations and Conclusion](#recommendations-and-conclusion)
 * [Project Contributors](#project-contributors) 
 * [Project Structure](#project-structure)
@@ -44,7 +44,7 @@ We approached our business problem as independent real estate consultants. Our c
 * Housing Price Prediction using Zillow Data Analysis
   * We employed both ARIMA (AutoRegressive Integrated Moving Average) and Auto-ARIMA models to predict housing prices. The ARIMA model helped us understand the temporal dependencies and trends in the data, while the Auto-ARIMA model automated the process of identifying the optimal parameters for our time series forecasting. By comparing the results from these models, we were able to enhance the accuracy and robustness of our housing price predictions.
 * Housing Feature Analysis
-  * We utilized a Linear Regression model for our feature analysis. The model was trained using the model.fit(X_train, y_train) method, allowing it to learn from the training data. After training, we made predictions on the test data with the model.predict(X_test) function. This approach enabled us to assess the model's performance and accuracy effectively.
+  * We utilized a Linear Regression model for our feature analysis. The model was trained using the model.fit(X_train, y_train) method, allowing it to learn from the training data. After training, we made predictions on the test data with the model.predict(X_test) function. This approach enabled us to assess the model's performance and accuracy effectively. A scatter plot comparing actual and predicted prices based on these three features shows a general alignment, though some deviations indicate potential areas for further model refinement. These findings underscore the significant impact of economic and structural factors on housing prices and demonstrate that while linear regression offers a reasonable predictive capability, there is room for improvement to enhance accuracy.
   * We trained models using Linear Regression and Random Forest, employing recursive feature elimination to iteratively remove less important features. Model performance was evaluated using RMSE, R², and MAE metrics, providing a comprehensive understanding of the factors influencing home prices.
 * Interest Rate Prediction Analysis
   * The visualization includes three key elements: the actual historical interest rates, represented as a line with circle markers; the Linear Regression predictions, depicted as a dashed line with 'x' markers, which illustrate the general trend but may miss some finer details; and the K-Nearest Neighbors (KNN) predictions, shown as a dotted line with square markers, which are potentially more responsive to recent changes in interest rates.
@@ -55,16 +55,16 @@ We approached our business problem as independent real estate consultants. Our c
 ## Visuals and Explanations
 * We used various visualizations to depict our data, including line graphs for trends, bar charts for categorical comparisons, scatter plots for correlations, and heatmaps for data density and relationships. These visualizations were presented in Google Slides for easy sharing and in Streamlit for an interactive experience, effectively communicating our findings.
 
-**Housing Price ROI**
+**EDA Housing Price ROI**
 ![image](resources/content/cg_roi.png)
-The ROI for California top metro areas.
+The EDA ROI for California top metro areas.
 
 **Housing Price Prediction**
-![image](resources/content/cg_10.png)
-Top 10 California areas with the highest ROI.
+![image](resources/content/cg_top5.png)
+Top 5 California areas with the highest ROI.
 
 **Housing Price Prediction Top Metro**
-![image](resources/content/cd_mtop.png)
+![image](resources/content/cg_riverside.png)
 The top metro area in California with predicted value.
 
 **Feature Accuracy Analysis**
@@ -103,12 +103,13 @@ linear Regression 2.
 [🔼 Back to top](#idtop)
 <hr>
 
-## Additional Explanations and Major Findings
+## Final Summary
   * Housing Price Prediction using Zillow Data Analysis
     * To identify the five most optimal metro areas for investment in California, we automated the process of running time series models (ARIMA and SARIMA) for each of the 34 metro areas. This automation was necessary due to the impracticality of manually analyzing each area. We evaluated the models' accuracy by comparing their predictions for December 2024 with actual observed values. The ARIMA model's predictions were 9.52% off, while the SARIMA model's predictions were 6.76% off. Despite ARIMA performing better for the top 5 metro areas, SARIMA's lower error rate suggests it could be more accurate with more data. The ARIMA model predicted a return on investment (ROI) percentage range of 4% to 5%, whereas the SARIMA model predicted an ROI range of 0% to 2%. Given SARIMA's lower error rate, it is considered more reliable for future predictions. 
   * Housing Feature Analysis  
+    * The analysis revealed that the three most influential factors in predicting house prices are Median Income (MedInc), House Age (HouseAge), and Average Number of Rooms (AveRooms). Among these, Median Income shows the strongest correlation with housing prices, indicating that areas with higher median incomes generally have more expensive homes. The linear regression model used in the analysis achieved an R-squared (R²) score of approximately 60%, suggesting a moderate level of predictive accuracy. Additonally, exterior quality is a very important feature, followed by Garage size and most of the living space size features. Kitchen quality is right behind exterior quality and the overall size of the house. 
   * Interest Rate Prediction Analysis
-
+* 
 [🔼 Back to top](#idtop)
 <hr>
 
