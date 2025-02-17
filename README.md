@@ -137,7 +137,7 @@ linear Regression 2.
 - Joel Freeman <br>
     Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
 - Sean Burroughs <br>
-    Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
+    Github: [www.github.com/RodBurr](https://github.com/RodBurr)<br>
 - Will Atwater <br>
     Github: [www.github.com/xraySMULu](https://github.com/xraySMULu)<br>
 
