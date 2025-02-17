@@ -55,9 +55,9 @@ We approached our business problem as independent real estate consultants. Our c
 ## Visuals and Explanations
 * We used various visualizations to depict our data, including line graphs for trends, bar charts for categorical comparisons, scatter plots for correlations, and heatmaps for data density and relationships. These visualizations were presented in Google Slides for easy sharing and in Streamlit for an interactive experience, effectively communicating our findings.
 
-**EDA Housing Price ROI**
-![image](resources/content/cg_roi.png)
-The EDA ROI for California top metro areas.
+**Average median home prices**
+![image](resources/content/cg_avghp.png)
+Average median home prices.
 
 **Housing Price Prediction**
 ![image](resources/content/cg_top5.png)
@@ -109,7 +109,7 @@ linear Regression 2.
   * Housing Feature Analysis  
     * The analysis revealed that the three most influential factors in predicting house prices are Median Income (MedInc), House Age (HouseAge), and Average Number of Rooms (AveRooms). Among these, Median Income shows the strongest correlation with housing prices, indicating that areas with higher median incomes generally have more expensive homes. The linear regression model used in the analysis achieved an R-squared (R²) score of approximately 60%, suggesting a moderate level of predictive accuracy. Additonally, exterior quality is a very important feature, followed by Garage size and most of the living space size features. Kitchen quality is right behind exterior quality and the overall size of the house. 
   * Interest Rate Prediction Analysis
-* 
+
 [🔼 Back to top](#idtop)
 <hr>
 
@@ -121,6 +121,12 @@ linear Regression 2.
       * Yuba City, CA - ROI @ 1 year - 5% 
       * Santa Rosa, CA - ROI @ 1 year - 4%
       * Merced, CA - ROI @ 1 year - 4%
+    * Features to consider-
+        * House age
+        * Exterior Quality
+        * Garage Size
+        * Living space size
+        * Kitchen quality
   * Conclusion
     * The prediction percentages come from models trained on five years of data to predict two years ahead. We plan to use ten years of training data to predict just one year ahead. This suggests that our future predictions will likely be even more accurate than those in this validation test. By leveraging a larger dataset, we aim to enhance the reliability and precision of our investment recommendations.
 
