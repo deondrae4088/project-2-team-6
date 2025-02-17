@@ -79,7 +79,7 @@ AMES Feature Importance
 ![image](resources/content/wat_ames_feat.png)
 AMES Feature Correlation
 
-**Interest Rate Prediction Analysis chart 1**
+**Interest Rate Prediction Analysis**
 ![image](resources/content/dex_lr1.png)
 linear Regression 1.
 ![image](resources/content/dex_lr2.png)
@@ -104,15 +104,24 @@ linear Regression 2.
 <hr>
 
 ## Additional Explanations and Major Findings
-  * Major findings
-    * Housing Price Prediction using Zillow Data Analysis
-    * Housing Feature Analysis  
-    * Interest Rate Prediction Analysis
+  * Housing Price Prediction using Zillow Data Analysis
+    * To identify the five most optimal metro areas for investment in California, we automated the process of running time series models (ARIMA and SARIMA) for each of the 34 metro areas. This automation was necessary due to the impracticality of manually analyzing each area. We evaluated the models' accuracy by comparing their predictions for December 2024 with actual observed values. The ARIMA model's predictions were 9.52% off, while the SARIMA model's predictions were 6.76% off. Despite ARIMA performing better for the top 5 metro areas, SARIMA's lower error rate suggests it could be more accurate with more data. The ARIMA model predicted a return on investment (ROI) percentage range of 4% to 5%, whereas the SARIMA model predicted an ROI range of 0% to 2%. Given SARIMA's lower error rate, it is considered more reliable for future predictions. 
+  * Housing Feature Analysis  
+  * Interest Rate Prediction Analysis
 
 [🔼 Back to top](#idtop)
 <hr>
 
 ## Recommendations and Conclusion
+  * Client Recommendation
+    * Top 5 California Metro Areas with the highest ROI and best potential for a solid investment
+      * Riverside, CA - ROI @ 1 year - 5%
+      * Fresno, CA - ROI @ 1 year - 5%
+      * Yuba City, CA - ROI @ 1 year - 5% 
+      * Santa Rosa, CA - ROI @ 1 year - 4%
+      * Merced, CA - ROI @ 1 year - 4%
+  * Conclusion
+    * The prediction percentages come from models trained on five years of data to predict two years ahead. We plan to use ten years of training data to predict just one year ahead. This suggests that our future predictions will likely be even more accurate than those in this validation test. By leveraging a larger dataset, we aim to enhance the reliability and precision of our investment recommendations.
 
 [🔼 Back to top](#idtop)
 <hr>
