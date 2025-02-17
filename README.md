@@ -109,7 +109,7 @@ linear Regression 2.
   * Housing Feature Analysis  
     * The analysis revealed that the three most influential factors in predicting house prices are Median Income (MedInc), House Age (HouseAge), and Average Number of Rooms (AveRooms). Among these, Median Income shows the strongest correlation with housing prices, indicating that areas with higher median incomes generally have more expensive homes. The linear regression model used in the analysis achieved an R-squared (R²) score of approximately 60%, suggesting a moderate level of predictive accuracy. Additonally, exterior quality is a very important feature, followed by Garage size and most of the living space size features. Kitchen quality is right behind exterior quality and the overall size of the house. 
   * Interest Rate Prediction Analysis
-
+    *  The models aim to predict future interest rates based on past trends. Assuming the historical patterns continue, the models could potentially forecast whether interest rates are likely to increase, decrease, or remain stable in the near future (e.g., the next few months).  
 [🔼 Back to top](#idtop)
 <hr>
 
