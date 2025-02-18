@@ -190,7 +190,7 @@ def plot_results(i, steps, df):
     high_int = round(forecast_series['mean_ci_upper'][11])
     
     print(f'12 month forecast: {forecast}')
-    print(f'95% confidence that the true future value is between {low_int}, and {high_int}')   
+    print(f'90% confidence that the true future value is between {low_int}, and {high_int}')   
 
 def check_stationarity(timeseries):
     # Perform the Dickey-Fuller test
@@ -247,7 +247,7 @@ def run_auto_sarima(series_i):
     """SARIMA model parameters based off manual tuning in analysing model.summary fits the SARIMA model."""
     model = SARIMAX(
         series_i,
-        order=(3,1,1),
+        order=(1,0,2),
         seasonal_order=(0, 0, 0, 0),
         enforce_stationarity=False,
         enforce_invertibility=False
@@ -301,7 +301,7 @@ def evaluate_sarima_models(df1, df2):
     preds = []
     perc_errors = []
     
-    for i in range(len(train.columns)):
+    for i in range(len(df1.columns)):
         
         name, series, forecast_series = run_sarima_model(i, 25, df1)
         
@@ -398,7 +398,7 @@ def plot_sarima_results(i, steps, df):
     high_int = round(forecast_series['mean_ci_upper'][11])
     
     print(f'12 month forecast: {forecast}')
-    print(f'95% confidence that the true future value is between {low_int}, and {high_int}')
+    print(f'85% confidence that the true future value is between {low_int}, and {high_int}')
 
 def arima_objective_function(args_list):
 
@@ -455,6 +455,41 @@ def evaluate_for_perf_models(dataset, p_values, d_values, q_values):
 				order = (p,d,q)
 				try:
 					rmse = evaluate_arima_model(dataset, order)
+					if rmse < best_score:
+						best_score, best_cfg = rmse, order
+					print('ARIMA%s RMSE=%.3f' % (order,rmse))
+				except:
+					continue
+	print('Best ARIMA%s RMSE=%.3f' % (best_cfg, best_score))
+
+def evaluate_sarima_model(X, arima_order):
+    # evaluate an ARIMA model for a given order (p,d,q)
+    # prepare training dataset
+	train_size = int(len(X) * 0.66)
+	train, test = X[0:train_size], X[train_size:]
+	history = [x for x in train]
+	# make predictions
+	predictions = list()
+	for t in range(len(test)):
+		model = SARIMAX(history, order=arima_order)
+		model_fit = model.fit()
+		yhat = model_fit.forecast()[0]
+		predictions.append(yhat)
+		history.append(test[t])
+	# calculate out of sample error
+	rmse = sqrt(mean_squared_error(test, predictions))
+	return rmse
+ # evaluate combinations of p, d and q values for an ARIMA model
+
+def evaluate_for_perf_sarima_models(dataset, p_values, d_values, q_values):
+	dataset = dataset.astype('float32')
+	best_score, best_cfg = float("inf"), None
+	for p in p_values:
+		for d in d_values:
+			for q in q_values:
+				order = (p,d,q)
+				try:
+					rmse = evaluate_sarima_model(dataset, order)
 					if rmse < best_score:
 						best_score, best_cfg = rmse, order
 					print('ARIMA%s RMSE=%.3f' % (order,rmse))
