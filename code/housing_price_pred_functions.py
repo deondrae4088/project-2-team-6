@@ -537,24 +537,3 @@ def detrend_test(TS, alpha=0.05, maxlag=4, suppress_output=False):
         print('\nMetro Areas with p-values above alpha of {}'.format(alpha), plist_zips)        
         return new_TS, log_1diff
     
-def append_to_list_and_create_csv(data, filename):
-    # Initialize an empty list
-    data_list = []
-
-    # Append data to the list through a loop
-    for item in data:
-        data_list.append(item)
-
-    # Create a CSV file from the list
-    with open(filename, 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(['Data'])  # Write header
-        for item in data_list:
-            writer.writerow([item])
-
-# Example usage
-data = ['apple', 'banana', 'cherry', 'date', 'elderberry']
-filename = 'fruits.csv'
-append_to_list_and_create_csv(data, filename)
-
-print(f"CSV file '{filename}' created successfully.")
