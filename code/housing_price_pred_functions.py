@@ -478,14 +478,14 @@ def detrend_test(TS, alpha=0.05, maxlag=4, suppress_output=False):
     plist = []  
     plist_zips = []
     
-    # Keep track of which zipcodes require a log 1st difference transformation
+    # Keep track of which metro require a log 1st difference transformation
     log_1diff = []
     
-    for column in list(TS.columns):  #go through each zipcode in the DF
+    for column in list(TS.columns):  #go through each metro in the DF
         p_values = []
         
         # First Difference
-            # find the first difference for each row in the zipcode
+            # find the first difference for each row in the metro
         data_1diff = TS[column].diff(periods=1) 
             # perform Dickey Fuller test on first difference
         dftest = adfuller(data_1diff.dropna(),maxlag=maxlag)
@@ -497,7 +497,7 @@ def detrend_test(TS, alpha=0.05, maxlag=4, suppress_output=False):
         p_values.append(dfoutput_1diff[1])
     
         # Log First Difference
-            # find the log first difference for each row in the zipcode
+            # find the log first difference for each row in the metro
         data_log_1diff = TS[column].apply(lambda x: np.log(x)) - TS[column].apply(lambda x: np.log(x)).shift(1)
             # perform Dickey Fuller test on first difference
         dftest = adfuller(data_log_1diff.dropna(),maxlag=maxlag)
@@ -509,25 +509,25 @@ def detrend_test(TS, alpha=0.05, maxlag=4, suppress_output=False):
         p_values.append(dfoutput_log_1diff[1])
 
         # If first difference performed better, print the Dickey-Fuller results and plot
-        if np.argmin(p_values)==0:
+        """ if np.argmin(p_values)==0:
             data_1diff.plot(figsize=(20,6))
             plt.title('{} First Difference'.format(column))
             plt.show();
             print(dfoutput_1diff)
-            new_TS[column]=data_1diff
+            new_TS[column]=data_1diff """
         
         # If log first difference performed better, print the Dickey-Fuller results and plot
-        elif np.argmin(p_values)==1:
+        """ elif np.argmin(p_values)==1:
             log_1diff.append(column)
             data_log_1diff.plot(figsize=(20,6))
             plt.title('{} Log First Difference'.format(column))
             plt.show();
             print(dfoutput_log_1diff)
-            new_TS[column]=data_log_1diff
+            new_TS[column]=data_log_1diff """
         
         # Add the smallest p value from tests, to the plist
         plist.append(min(p_values))
-        # Add zipcodes with high p-values to plist_zips
+        # Add metros with high p-values to plist_zips
         if min(p_values)>alpha:
             plist_zips.append(column)
     
@@ -537,3 +537,24 @@ def detrend_test(TS, alpha=0.05, maxlag=4, suppress_output=False):
         print('\nMetro Areas with p-values above alpha of {}'.format(alpha), plist_zips)        
         return new_TS, log_1diff
     
+def append_to_list_and_create_csv(data, filename):
+    # Initialize an empty list
+    data_list = []
+
+    # Append data to the list through a loop
+    for item in data:
+        data_list.append(item)
+
+    # Create a CSV file from the list
+    with open(filename, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Data'])  # Write header
+        for item in data_list:
+            writer.writerow([item])
+
+# Example usage
+data = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+filename = 'fruits.csv'
+append_to_list_and_create_csv(data, filename)
+
+print(f"CSV file '{filename}' created successfully.")
