@@ -1,4 +1,4 @@
-# **Golden State Housing Report: A predictive analysis of California's housing market**
+# **Golden State Housing Insights: A predictive analysis of California's housing market**
 <a id="idtop"></a>  
 <img src="./resources/content/gs1.jpg" width="750">
 
@@ -18,6 +18,10 @@
 
 ## Project Overview 
 The primary goal of our project, Golden State Housing Insights, is to predict housing prices in the state of California. Our team aims to achieve this by leveraging machine learning models to analyze various factors, including investor return on investment (ROI), feature analysis and interest rate predictability. By integrating these elements, we strive to provide accurate and actionable insights into the California housing market, aiding investors, homebuyers, and policymakers in making informed decisions.
+
+The business question we hope to answer is: *What are the key interrelationships between housing price as dictated by home features and interest rates as well as housing price for california metro area returns over time?*
+
+Our motivation for taking on this challenge is to find out if we can accurately predict housing prices based off home features, interest rates and metro areas.
 
 [🔼 Back to top](#idtop)
 <hr>
@@ -94,8 +98,11 @@ linear Regression 2.
   * Navigate to [Demo](resources/content/wat_demo.gif)
 * Interest Rate Prediction Analysis
   * Navigate to [Demo](resources/content/dex_demo.gif)  
-* Project #2 - Team #6 - Slideshow 
-  * Navigate to [Slideshow PDF](Resources/content/proj1slideshow.pdf)
+* Project #2 - Team #6 - StreamLit Demonstration 
+  * Navigate to [StreamLit Demo Files](resources/website)
+* Project #2 - Team #6 - Powerpoint Presentation 
+  * Navigate to [Slideshow PPT](resources/presentation/Golden-State-Housing-Insights.pptx)
+  * Navigate to [Slideshow PDF](resources/presentation/Golden-State-Housing-Insights.pdf)
 
 [🔼 Back to top](#idtop)
 <hr>
@@ -105,7 +112,7 @@ linear Regression 2.
     * To identify the five most optimal metro areas for investment in California, we automated the process of running time series models (ARIMA and SARIMA) for each of the 34 metro areas. This automation was necessary due to the impracticality of manually analyzing each area. We evaluated the models' accuracy by comparing their predictions for December 2024 with actual observed values. The ARIMA model's predictions were 10.22% off with 89% accuracy, while the SARIMA model's predictions were 14.12% off with 86% accuracy.
     * Despite SARIMA showing better ROI for the top 5 metro areas, ARIMA's lower error rate suggests it could be more accurate with additional data. The ARIMA model predicted a return on investment (ROI) percentage range of 4% to 6%, whereas the SARIMA model predicted an ROI range of 5% to 6%. For model optimization, both ARIMA and SARIMA had high RMSE values, 2432.90 and 3547.65 respectively. High RMSE indicates a flawed predictive model, as this value should ideally be in the 50-100 range.
   * Housing Feature Analysis  
-    * The analysis revealed that the five most influential factors in predicting house prices are Median Income (MedInc), House Age (HouseAge), and Average Number of Rooms (AveRooms), Latitude, and Average Occupancity(AveOccup). Among these, Median Income exhibits the strongest correlation with housing prices, suggesting that areas with higher median incomes tend to have more expensive homes. The model, trained using linear regression, achieved an R-squared (R²) score of approximately 63%. Even after refinment using hypertuning and comparing the Random Forest Model the maximum accuracy score topped at 70.47%. These findings highlight that there is an impact of economic factors on housing prices though not wholly reliable. Access to more impactful features will be needed. Additonally, exterior quality is a very important feature, followed by Garage size and most of the living space size features. Kitchen quality is right behind exterior quality and the overall size of the house. 
+    * The analysis revealed that the three most influential factors in predicting house prices are Median Income (MedInc), House Age (HouseAge), and Average Number of Rooms (AveRooms). Among these, Median Income shows the strongest correlation with housing prices, indicating that areas with higher median incomes generally have more expensive homes. The linear regression model used in the analysis achieved an R-squared (R²) score of approximately 60%, suggesting a moderate level of predictive accuracy. Additonally, exterior quality is a very important feature, followed by Garage size and most of the living space size features. Kitchen quality is right behind exterior quality and the overall size of the house. 
   * Interest Rate Prediction Analysis
     * The models are designed to forecast future interest rates based on historical trends. Assuming these patterns persist, the models can potentially predict whether interest rates will rise, fall, or remain stable in the near term (e.g., the next few months). The plot titled "Interest Rate Prediction until Feb 2025" illustrates an upward trend in interest rates over recent years. Consequently, we would generally expect a slowdown in the housing market, characterized by potentially decreased sales and slower home price appreciation.
     * The model forecasts an increase in interest rates into February 2025. This is primarily because interest rates directly influence mortgage rates. Higher mortgage rates make homes less affordable, leading to decreased demand and potentially lower home prices. Conversely, lower mortgage rates make homes more affordable, potentially increasing demand and driving up home prices.
@@ -117,15 +124,17 @@ linear Regression 2.
     * Top 5 California Metro Areas with the highest ROI and best potential for a solid investment
       * Merced, CA - ROI @ 1 year - 6%
       * Modesto, CA - ROI @ 1 year - 5%
-      * Santa Cruz, CA - ROI @ 1 year - 4% 
-      * Sacramento, CA - ROI @ 1 year - 4%
-      * Bakersfield, CA - ROI @ 1 year - 4%
+      * Bakersfield, CA - ROI @ 1 year - 4% 
+      * Oxnard, CA - ROI @ 1 year - 4%
+      * Valejo, CA - ROI @ 1 year - 3%
     * Features to consider-
         * House age
         * Exterior Quality
         * Garage Size
         * Living space size
         * Kitchen quality
+    * Interest Rate Prediction
+      * Increase in interest rates into Q1 2025
   * Conclusion
     * The prediction percentages come from models trained on five years of data to predict two years ahead. We plan to use ten years of training data to predict just one year ahead. This suggests that our future predictions will likely be even more accurate than those in this validation test. By leveraging a larger dataset, we aim to enhance the reliability and precision of our investment recommendations.
 
