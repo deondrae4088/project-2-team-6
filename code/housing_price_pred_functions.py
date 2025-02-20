@@ -166,6 +166,7 @@ def generate_predictions(df, steps):
     results_df['Predicted Value'] = pred_vals
     results_df['Net Profit'] = net_profits
     results_df['ROI'] = ROI_strings
+    results_df.to_csv('../resources/data/housing_predictions_arima.csv')
     
     return results_df
 
@@ -373,6 +374,7 @@ def generate_sarima_predictions(df, steps):
     results_df['Predicted Value'] = pred_vals
     results_df['Net Profit'] = net_profits
     results_df['ROI'] = ROI_strings
+    results_df.to_csv('../resources/data/housing_predictions_sarima.csv')
     
     return results_df
 
