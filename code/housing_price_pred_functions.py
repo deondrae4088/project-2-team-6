@@ -36,12 +36,12 @@ def run_auto_arima(series_i):
     '''
     
     gridsearch = auto_arima(series_i,
-                            start_p = 0,
-                            max_p = 1,
+                            start_p = 1,
+                            max_p = 2,
                             d = 0, 
-                            max_d = 0, 
-                            start_q = 0,
-                            max_q = 2,
+                            max_d = 1, 
+                            start_q = 1,
+                            max_q = 1,
                             seasonal=True,
                             m = 12,
                             suppress_warnings=True)
