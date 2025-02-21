@@ -36,12 +36,12 @@ def run_auto_arima(series_i):
     '''
     
     gridsearch = auto_arima(series_i,
-                            start_p = 0,
-                            max_p = 1,
+                            start_p = 1,
+                            max_p = 2,
                             d = 0, 
-                            max_d = 0, 
-                            start_q = 0,
-                            max_q = 2,
+                            max_d = 1, 
+                            start_q = 1,
+                            max_q = 1,
                             seasonal=True,
                             m = 12,
                             suppress_warnings=True)
@@ -588,18 +588,18 @@ def preprocess_hs_data(hs_df):
     split into training and testing sets. Uses price
     as the target column.
     """
-    hs_df['pm2.5'] = hs_df['pm2.5'].fillna(hs_df['pm2.5'].mean())
+    hs_df['San Francisco, CA'] = hs_df['San Francisco, CA'].fillna(hs_df['San Francisco, CA'].mean())
     hs_df = hs_df.dropna()
-    X = pd.get_dummies(hs_df.drop(columns='pm2.5'))
-    y = hs_df['pm2.5'].values.reshape(-1, 1)
+    X = pd.get_dummies(hs_df.drop(columns='San Francisco, CA'))
+    y = hs_df['San Francisco, CA'].values.reshape(-1, 1)
     return train_test_split(X, y)   
 def preprocess_hs_data_keep_na(hs_df):
     """
     Written for hs data; will split into training
     and testing sets. Uses price as the target column.
     """
-    X = hs_df.drop(columns='pm2.5')
-    y = hs_df['pm2.5'].values.reshape(-1, 1)
+    X = hs_df.drop(columns='San Francisco, CA')
+    y = hs_df['San Francisco, CA'].values.reshape(-1, 1)
     return train_test_split(X, y)
 def r2_adj(x, y, model):
     """
